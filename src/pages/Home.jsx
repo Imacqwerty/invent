@@ -37,7 +37,7 @@ const homeref = useRef(null);
 
     {/*HERO 1 */}
     <section className={style.homehero1} > 
-      <video autoPlay loop muted ><source src="/1.mp4"  type="video/mp4"></source></video>
+      <video autoPlay loop muted ><source src="./1.mp4"  type="video/mp4"></source></video>
         <div className={style.hero1intro1}>
           <h1><strong>Welcome to Invent</strong></h1>
           <p>Created with ReactJS Framework</p>
