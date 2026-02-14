@@ -37,7 +37,7 @@ const homeref = useRef(null);
 
     {/*HERO 1 */}
     <section className={style.homehero1} > 
-      <video autoPlay loop muted ><source src="./1.mp4"  type="video/mp4"></source></video>
+      <video autoPlay loop muted > <source src={`${process.env.PUBLIC_URL}/1.mp4`} type="video/mp4" /></video>
         <div className={style.hero1intro1}>
           <h1><strong>Welcome to Invent</strong></h1>
           <p>Created with ReactJS Framework</p>
@@ -60,7 +60,7 @@ const homeref = useRef(null);
         <p>By Kent Quilao</p>
         </div>
         <div className={style.hero2intro2}>
-          <img src="./alumni.png"></img>
+          <img src={`${process.env.PUBLIC_URL}/alumni.png`}></img>
         </div>
     </section>
     {/*END HERO 2 */}
@@ -70,7 +70,7 @@ const homeref = useRef(null);
     <section className={style.homehero3}>
 
        <div className={style.hero3intro2}>
-        <img src="./Ace.png"></img>
+        <img src={`${process.env.PUBLIC_URL}/Ace.png`}></img>
       </div>
 
       <div className={style.hero3intro1}>
@@ -96,11 +96,11 @@ const homeref = useRef(null);
       <div className={style.hero4intro2} ref={hero4Ref}>
         <h2>Technology Stacks</h2>
         <div className={style.techstacks}>
-          <div className={style.techimage}><img src="./react.png" ></img></div>
-          <div className={style.techimage}><img src="./laravel.png" className={style.img2}></img></div>
-          <div className={style.techimage}><img src="./html.png" className={style.img3}></img></div>
-          <div className={style.techimage}><img src="./css.png" className={style.img4}></img></div>
-          <div className={style.techimage}><img src="./javascript.png" className={style.img5}></img></div>
+          <div className={style.techimage}><img src={`${process.env.PUBLIC_URL}/react.png`} className={style.img1}/></div>
+          <div className={style.techimage}><img src={`${process.env.PUBLIC_URL}/laravel.png`} className={style.img2}/></div>
+          <div className={style.techimage}><img src={`${process.env.PUBLIC_URL}/html.png`} className={style.img3}/></div>
+          <div className={style.techimage}><img src={`${process.env.PUBLIC_URL}/css.png`} className={style.img4}/></div>
+          <div className={style.techimage}><img src={`${process.env.PUBLIC_URL}/javascript.png`} className={style.img5}/></div>
 
           
           
