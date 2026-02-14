@@ -7,7 +7,7 @@ import Delete from './pages/Delete';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Invent">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
