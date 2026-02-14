@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* html {
+  padding: 0rem 4rem 0rem 4rem;
+} */
+
+.wholecanvas {
+  background-color: bisque;
+}
+
+/*  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+
+.nav {
+  /*Makes it always on top and fixed*/
+  position: fixed; /* Stays at top */
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: #03122b;
+  z-index: 10;
+  color: white;
+  /* transform: translateY(-100%); Start hidden above screen */
+  /* animation: slideDown 0.8s ease-out forwards; Animate down */
+}
+
+.webname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navlinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.linkstyle a {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  transition:
+    background-color 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  color: white;
+}
+
+.linkstyle a:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.homehero1 {
+  margin-top: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-center;
+  align-items: center;
+  height: 80vh;
+  color: white;
+  overflow: hidden;
+  /* animation: slideBackground 10s ease-in-out infinite alternate; video gets infinite play and alternate and then ease in and out effect */
+}
+
+video {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* @keyframes slideBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+} */
+
+.hero1intro1 {
+  height: 35vh;
+  position: relative;
+  z-index: 1;
+  border-radius: 3rem;
+  padding: 3rem;
+  width: 100vw;
+  text-align: center;
+}
+
+.hero1intro1 h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.title h1 {
+  color: black;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.homehero2 {
+  height: 80vh;
+  background-color: bisque;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homehero2 img {
+  width: 55vw;
+  border-radius: 2rem;
+}
+
+.hero2intro1 {
+  background-color: bisque;
+  padding: 3rem;
+  width: auto;
+}
+
+.homehero3 {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03122b;
+  color: white;
+}
+
+.hero3intro1 {
+  padding: 3rem;
+}
+
+.homehero3 img {
+  width: 55vw;
+  border-radius: 2rem;
+}
+
+.homehero4 {
+  background-color: bisque;
+  height: 80vh;
+  text-align: center;
+  padding: 2rem 1rem 0rem 1rem;
+}
+
+.hero4intro1 {
+  padding: 2rem;
+}
+
+.techstacks {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.techimage {
+  width: 10rem;
+}
+
+.techimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.homefooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #03122b;
+  width: auto;
+  padding: 2rem;
+  color: white;
+}
