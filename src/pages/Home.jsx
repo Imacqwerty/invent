@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import style from './styles/Homestyle.module.css';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 function Home() {
 const hero4Ref = useRef(null);
